@@ -1,0 +1,69 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./layouts/partials/head') %>
+
+  <body>
+    <div id="wrapper">
+      <%- include('./layouts/partials/header') %> <%-
+      include('./layouts/partials/navigation') %>
+      <main>
+        <h1>Welcome to CSE Motors</h1>
+
+        <section class="car-section">
+          <div class="dmc-delorean">
+            <h3>DMC DELOREAN</h3>
+            <b>3 cup holders</b>
+            <b>superman doors</b>
+            <b>fuzzy dice</b>
+            <button class="dmc-delorean-btn">Own Today</button>
+          </div>
+        </section>
+        <hr />
+
+        <section class="delorean-ads">
+          <div class="delorean-upgrades">
+            <h1>Delorean Upgrades</h1>
+            <div class="delorean-row">
+              <div class="upgrade-item">
+                <div class="upgrade-item-img1"></div>
+                <a href="#">Flux Capacitor</a>
+              </div>
+
+              <div class="upgrade-item">
+                <div class="upgrade-item-img2"></div>
+                <a href="#">Flame Decals</a>
+              </div>
+            </div>
+
+            <div class="delorean-row">
+              <div class="upgrade-item">
+                <div class="upgrade-item-img3"></div>
+                <a href="#">Bumper Stickers</a>
+              </div>
+              <div class="upgrade-item">
+                <div class="upgrade-item-img4"></div>
+                <a href="#">Hub Cap</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="delorean-reviews">
+            <div>
+              <h1>DMC Delorean Reviews</h1>
+              <ul>
+                <li>"So fast it's almost like traveling in time." (4/5)</li>
+                <li>"Coolest ride on the road." (4/5)</li>
+                <li>"I'm feeling McFly!" (5/5)</li>
+                <li>"The most futuristic ride of our day." (4.5/5)</li>
+                <li>"80's livin and I love it!" (5/5)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <%- include('./layouts/partials/footer') %>
+    </div>
+  </body>
+</html>
